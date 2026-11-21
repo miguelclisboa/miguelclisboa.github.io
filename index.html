@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Miguel Lisboa</title>
-<meta name="description" content="Miguel Lisboa. Técnico em agropecuária (IFAL), projetos de compostagem e hidroponia, sertão de Alagoas.">
+<meta name="description" content="Miguel Lisboa.">
 <meta name="theme-color" content="#121212">
 <meta property="og:title" content="Miguel Lisboa">
 <meta property="og:type" content="website">
@@ -40,8 +40,8 @@ img,.ph{display:block}
 img{object-fit:cover}
 
 /* Fundo desfocado (só no computador): mesma foto, escurecida e com vinheta */
-.backdrop{position:fixed;inset:0;background:var(--hero) center/cover no-repeat;filter:blur(128px) brightness(.55) saturate(.85);z-index:0;pointer-events:none}
-.vignette{position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(ellipse 70% 80% at 50% 45%,transparent 35%,rgba(0,0,0,.6) 100%)}
+.backdrop{position:fixed;inset:0;background:var(--hero) center/cover no-repeat;filter:blur(128px) brightness(.9) saturate(.9);z-index:0;pointer-events:none}
+.vignette{position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(ellipse 75% 85% at 50% 40%,transparent 40%,rgba(0,0,0,.35) 70%,rgba(0,0,0,.75) 100%)}
 
 /* Cartão central */
 .container{position:relative;z-index:1;max-width:736px;margin:80px auto 0;background:var(--bg);border-radius:12px;padding:32px 48px 24px}
@@ -94,6 +94,7 @@ h2{font-size:24px;line-height:30px;font-weight:600;letter-spacing:-.25px}
 .item{display:flex;align-items:center;height:148px;background:var(--surface);border-radius:8px;overflow:hidden}
 .item .ph,.item img{width:144px;height:100%;flex:none}
 .item h3{padding:0 16px;font-size:16px;line-height:20px;font-weight:600;letter-spacing:-.25px}
+.item .mono{display:grid;place-items:center;font-size:20px;font-weight:600;letter-spacing:-.25px;color:rgba(255,255,255,.75)}
 .item small{display:block;margin-top:4px;font-size:13px;font-weight:400;color:var(--muted);letter-spacing:0}
 
 /* Cartão único com quadrado sobreposto */
@@ -143,43 +144,16 @@ footer{padding:32px 0 8px;text-align:center;font-size:11px;letter-spacing:.2em;t
   </header>
 
   <nav class="tabs" aria-label="Seções">
-    <a href="#projetos" class="active">Projetos</a>
-    <a href="#galeria">Galeria</a>
-    <a href="#formacao">Formação</a>
+    <a href="#trajetoria" class="active">Trajetória</a>
     <a href="#contato">Contato</a>
   </nav>
 
-  <section id="projetos">
-    <div class="sec-head"><h2>Projetos</h2><div class="arrows"></div></div>
-    <div class="track">
-      <article class="media">
-        <div class="ph" role="img" aria-label="Foto do projeto de compostagem (em breve)"></div>
-        <h3>Do Lixo ao Tesouro: Compostagem para Fertilizar o Solo</h3>
-        <span class="tag">Em andamento · bolsista</span>
-      </article>
-      <article class="media">
-        <div class="ph" role="img" aria-label="Foto do projeto de hidroponia (em breve)"></div>
-        <h3>Hidroponia na Roça: Plantando o Futuro da Agricultura Familiar</h3>
-        <span class="tag">Concluído em 2025 · bolsista</span>
-      </article>
-    </div>
-  </section>
-
-  <section id="galeria">
-    <div class="sec-head"><h2>Galeria</h2><div class="arrows"></div></div>
-    <div class="track">
-      <div class="ph tile" role="img" aria-label="Foto (em breve)"></div>
-      <div class="ph tile" role="img" aria-label="Foto (em breve)"></div>
-      <div class="ph tile" role="img" aria-label="Foto (em breve)"></div>
-      <div class="ph tile" role="img" aria-label="Foto (em breve)"></div>
-      <div class="ph tile" role="img" aria-label="Foto (em breve)"></div>
-    </div>
-  </section>
-
-  <section id="formacao">
-    <div class="sec-head"><h2>Formação</h2><div class="arrows"></div></div>
+  <section id="trajetoria">
+    <div class="sec-head"><h2>Trajetória</h2><div class="arrows"></div></div>
     <div class="track rows">
-      <div class="item"><div class="ph" aria-hidden="true"></div><h3>Técnico em Agropecuária<small>IFAL · conclusão em 2026</small></h3></div>
+      <div class="item"><div class="ph mono" aria-hidden="true">IF</div><h3>Instituto Federal de Alagoas<small>Técnico em Agropecuária · 2026</small></h3></div>
+      <div class="item"><div class="ph mono" aria-hidden="true">EX</div><h3>Do Lixo ao Tesouro<small>Projeto de extensão · bolsista</small></h3></div>
+      <div class="item"><div class="ph mono" aria-hidden="true">EX</div><h3>Hidroponia na Roça<small>Projeto de extensão · bolsista · 2025</small></h3></div>
     </div>
   </section>
 
