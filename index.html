@@ -44,7 +44,7 @@ img{object-fit:cover}
 .vignette{position:fixed;inset:0;z-index:0;pointer-events:none;background:none}
 
 /* Cartão central */
-.container{position:relative;z-index:1;max-width:736px;margin:80px auto 0;background:var(--bg);border-radius:12px;padding:32px 48px 24px}
+.container{position:relative;z-index:1;max-width:736px;margin:80px auto 80px;background:var(--bg);border-radius:12px;padding:32px 48px 32px}
 
 /* Cabeçalho */
 .header{display:flex;flex-direction:column;align-items:center;padding-top:64px}
@@ -65,7 +65,6 @@ h1{font-size:48px;line-height:60px;font-weight:600;letter-spacing:-.25px}
 
 /* Seções */
 section{margin-top:24px;padding:0 0 16px;border-bottom:1px solid var(--line);scroll-margin-top:16px}
-section:last-of-type{border-bottom:0}
 .sec-head{display:flex;align-items:center;justify-content:space-between;min-height:32px;margin-bottom:31px}
 h2{font-size:24px;line-height:30px;font-weight:600;letter-spacing:-.25px}
 .arrows{display:flex}
@@ -104,7 +103,7 @@ h2{font-size:24px;line-height:30px;font-weight:600;letter-spacing:-.25px}
 .feature:hover .box,.feature:focus-visible .box{background:rgba(255,255,255,.15)}
 .feature h3{position:relative;z-index:1;padding:0 16px;font-size:16px;line-height:20px;font-weight:600;letter-spacing:-.25px;word-break:break-word}
 
-footer{padding:32px 0 8px;text-align:center;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+footer{margin-top:24px;min-height:88px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;text-align:center;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
 
 /* Celular */
 @media (max-width:767px){
