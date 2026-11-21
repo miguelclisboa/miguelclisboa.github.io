@@ -55,7 +55,7 @@ h1{font-size:48px;line-height:60px;font-weight:600;letter-spacing:-.25px}
 .socials{display:flex;gap:8px;justify-content:center;margin-top:24px}
 .socials a{width:32px;height:32px;display:grid;place-items:center;border-radius:8px;transition:background .15s}
 .socials a:hover,.socials a:focus-visible{background:var(--pill)}
-.socials svg{width:22px;height:22px}
+.socials svg{width:24px;height:24px}
 
 /* Abas */
 .tabs{display:flex;gap:8px;margin:24px 8px 0;overflow-x:auto;scrollbar-width:none}
@@ -113,14 +113,27 @@ footer{padding:32px 0 8px;text-align:center;font-size:11px;letter-spacing:.2em;t
   .container{margin:0;max-width:none;border-radius:0;padding:0 16px 16px}
   .header{position:relative;margin:0 -16px;padding-top:0}
   .portrait{width:100%;max-width:none;border-radius:0}
-  .header::after{content:"";position:absolute;left:0;right:0;top:calc(100vw * 1.25 - 160px);height:160px;background:linear-gradient(transparent,var(--bg));pointer-events:none}
-  .name-wrap{position:absolute;left:16px;right:16px;top:calc(100vw * 1.25 - 64px);margin:0;z-index:1}
+  .header::after{content:"";position:absolute;left:0;right:0;top:0;height:calc(100vw * 1.25);background:linear-gradient(transparent 75%,var(--bg) 100%);pointer-events:none}
+  .name-wrap{position:relative;margin:-50px 0 0;z-index:1}
   h1{font-size:32px;line-height:40px}
-  .socials{margin-top:20px}
-  .tabs{margin:20px -16px 0;padding:0 16px}
+  .socials{margin-top:16px}
+  .socials a{width:24px;height:24px}
+  .tabs{margin:16px -8px 0;padding:0}
+  section{margin-top:24px}
+  h2{font-size:20px;line-height:25px}
   .media{width:300px}
+  .tile{width:152px}
   .track{margin-right:-16px}
   .track.rows{grid-auto-columns:300px}
+  .item{height:116px}
+  .item .ph,.item img{width:116px}
+  .item h3{font-size:14px;line-height:18px}
+  .item small{font-size:12px}
+  .feature{min-height:136px;padding-left:112px}
+  .feature .ph,.feature img{width:112px;height:112px}
+  .feature .box{left:64px}
+  .feature h3{padding:0 12px;font-size:14px;line-height:18px}
+  .sec-head{align-items:flex-start;margin-bottom:25px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
